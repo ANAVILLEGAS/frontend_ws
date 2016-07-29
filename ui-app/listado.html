@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Esto permite especificar la codificación de la página-->
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+        <title>Listado</title>
+        <link rel="stylesheet" type="text/css" href="https://static.mlstatic.com/org-img/ch/ui/1.1.1/themes/mp/chico.min-0.0.2.css">
+        <link rel="stylesheet" type="text/css" href="ui-build/css/bundle__small.css">
+
+    </head>
+    <body>
+        <h1>Listado de Operaciones</h1>
+        <ol class="option-nav" >
+                <li>Operaciones</li>
+                <li>Resumen</li>
+        </ol>
+        <div class="menu-div">
+            <nav class="nav">
+                <ul class="main-nav">
+                  <li>Resumen
+                      <ol>
+                          <li>Solicitar dinero</li>
+                          <li>Enviar dinero</li>
+                          <li>Ingresar dinero</li>
+                      </ol>
+                  </li>
+
+                  <li>Operaciones
+                      <ol>
+                          <li>Operaciones</li>
+                          <li>Movimientos de cuenta</li>
+                      </ol>
+                  </li>
+
+                  <li>Configuración
+                      <ol>
+                          <li>Datos personales</li>
+                          <li>Tarjetas</li>
+                          <li>Domicilios</li>
+                      </ol>
+                  </li>
+
+                  <li>Ayuda
+                      <ol>
+                          <li>Pagos</li>
+                          <li>Cobros</li>
+                          <li>Retiros de dinero</li>
+                          <li>Mi Cuenta</li>
+                          <li>Seguridad</li>
+                      </ol>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <!--  Esto es otra manera de crear bullets, tiene otra jerarquía
+        <ol>
+            <li>Resumen</li>
+            <li>Operaciones</li>
+            <li>Configuración</li>
+            <li>Ayuda</li>
+
+        </ol>
+         -->
+        <div class="operations-div">
+            <section id="operation-list" class="operation-list">
+                
+                <p>Este es un <strong>listado de operaciones</strong>, podrás encontrar desde tus
+                <em>envíos de dinero</em> hasta los regalos de la abuela </p>
+
+                <aside>
+                    <p>Acá podés encontrar tu QR
+                        <!-- Esto es un comment -->
+                        <!-- &nbsp para forzar espacio -->
+                        <!-- <br> para salto de linea -->
+                        <code>http://www.mercadopago.com.ar/miqr</code>
+                    </p>
+                </aside>
+
+                <button class="ch-btn ch-btn-small" id="archivar"> Archivar </button>
+                <button class="ch-btn ch-btn-small" id="borrar"> Borrar </button>
+
+                <section class="operations-day">
+                    <h2>13 de junio</h2> <!-- Hay hasta 6 niveles -->
+                   
+                    <article class="operation" >
+                        <input type="checkbox" class="input-checkbox">
+                        <div class='operation-type'>Pago de Artículo</div>
+                        <div class='operation-status'>approve</div>
+                        <div class='operation-amount'>500</div>
+                        <div class='operation-description'>Vitroconvector Peabody</div>
+                    </article>                    
+
+                    <article class="operation" >
+                        <input type="checkbox"  class="input-checkbox" >
+                        <div class='operation-type'>Pago de Artículo</div>
+                        <div class='operation-status'>approve</div>
+                        <div class='operation-amount'>500</div>
+                        <div class='operation-description'>Vitroconvector Peabody</div>
+                    </article>
+
+                    
+                </section>
+               
+                <section class="operations-day">
+                    <h2>01 de junio</h2> <!-- Hay hasta 6 niveles -->
+                    <article class="operation" >
+                        <input type="checkbox"   class="input-checkbox">
+                        <div class='operation-type'>Envío de Dinero</div>
+                        <div class='operation-status'>approved</div>
+                        <div class='operation-amount'>500</div>
+                        <div class='operation-description'>Cumpleaños</div>
+                    </article>
+                </section>
+
+                <section class="operations-day">
+                    <h2>10 de mayo</h2> <!-- Hay hasta 6 niveles -->
+                    <article class="operation" >
+                        <input type="checkbox" class="input-checkbox">
+                        <div class='operation-type'>Compra Giftcard</div>
+                        <div class='operation-status'>approve</div>
+                        <div class='operation-amount'>300</div>
+                        <div class='operation-description'>Feliz Cumple!</div>
+                    </article>
+                </section>
+
+            </section>
+        </div>
+
+
+        <script src="ui-build/js/bundle__large.js"></script>
+    </body>
+    
+</html>
+
